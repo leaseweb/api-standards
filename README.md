@@ -1,4 +1,4 @@
-# LeaseWeb API Design Standards
+# Leaseweb API Design Standards
 
 + [Foundation](#foundation)
   - [Require TLS](#require-tls)
@@ -29,7 +29,7 @@
 + [Search](#search)
 + [Asynchronous Calls](#asynchronous-calls)
 
-This guide describes a set of API Design standards used at [LeaseWeb](https://www.leaseweb.com).
+This guide describes a set of API Design standards used at [Leaseweb](https://www.leaseweb.com).
 When designing a new API, it's important to respect the HTTP interaction patterns
 and resource models described below.
 
