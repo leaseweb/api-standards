@@ -101,6 +101,10 @@ Use the following HTTP status codes for errors:
 * `403 Forbidden`: Server understood the request, but refuses to fulfill it (might be due to the status of the resource, see the error message for specifics)
 * `404 Not Found`: Request failed because the resource does not exist or the resource doesn't belong to the user (e.g. for a `GET`, `PUT` or `DELETE` the specified resource doesn't exist)
 * `405 Method Not Allowed`: Request failed because the requested method is not allowed
+* `409 Conflict`: Request could not be completed due to a conflict with the current state of the resource (e.g., resource is already in a processing state)
+* `418 I’m a Teapot`: Request is unable to be processed to perform the action
+* `422 Unprocessable Entity`: Request is syntactically correct but contains invalid input values
+* `423 Locked`: Resource is locked and cannot be accessed/modified
 * `500 Internal Server Error`: Request failed on server side, user should check status site or report the issue (preferably we track 500 errors and get notified automatically)
 * `503 Service Unavailable`: API is unavailable, check status site for details
 
